@@ -14,13 +14,15 @@ for d in data:
 		hund.append(d)
 print('平均留言長度為: ', sum_len / len(data))
 
+print('一共有', len(hund), '留言字數<100')
 print(hund[0])
 print('--------------')
 print(hund[1])
 
 for d in data:
-	if d in 'good':
+	if 'good' in d:
 		good.append(d)
+print('一共有', len(good), '留言提到good')
 print(good[0])
 print(good[1])
 
